@@ -23,3 +23,15 @@ Content-Type: application/json
 {
   "prompt": "storm, echo"
 }
+
+###
+
+# @name generate-ai-completion
+POST http://localhost:3333/ai/complete
+Content-Type: application/json
+
+{
+  "videoId": "e46dc366-df9d-42cd-a029-2fc304f87d24",
+  "temperature": 0.5,
+  "template": "Gere um resumo sucinto da transcrição do vídeo informada a seguir: '''{transcription}'''"
+}
